@@ -280,10 +280,16 @@
           <form id="contactForm" action="">
               <input type="" placeholder="Enter Your Name" required>
               <input type="email" placeholder="Enter Your Email" required>
-              <input type="" placeholder="Enter Your Subject">
-              <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+              <input type="" placeholder="Enter Your Subject" required>
+              <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
               <input type="submit" value="Submit" class="send">
           </form>
+        </div>
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span onclick="closePopup()">&times;</span>
+            <p>Message Sent Successfully!</p>
+          </div>
         </div>
     </section>
     <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat-fade"></i></a>
