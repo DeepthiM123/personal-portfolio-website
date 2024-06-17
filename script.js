@@ -14,19 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    // Assuming the form is valid, you can proceed with showing the popup
-    showPopup();
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    form.reset();
+    showSuccessMessage();
 });
 
-function showPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "block";
+function showSuccessMessage() {
+    alert('Message sent successfully!');
 }
 
-function closePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-}
